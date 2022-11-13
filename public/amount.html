@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title> Save Ukraine | A crowfunding website</title>
+    <link rel="stylesheet" href="/static/style3.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                <h1 align="center">PAYMENT</h1>
+                
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <h1>You need to pay:</h1>
+                    <script type="text/javascript">
+                        var data = localStorage.getItem('MyAmountList');
+                        var object = JSON.parse(data);
+                        document.write('<h1>' + object.amount + '</h1>');
+                    </script>
+                </div>
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <p>card number</p>
+                    <input type="text" maxlength="16" class="card-number-input">
+                </div>
+                <div class="inputBox">
+                    <p>card holder</p>
+                    <input type="text" class="card-holder">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <p>expiration month</p>
+                        <div class="select">
+                            <select name="" id="" class="month-input">
+                                <option value="month" selected disabled></option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            
+            </form>
+            
+        </div>
+    </header>
+    
+</body>
